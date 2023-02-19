@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+section {
+  max-width: 1200px;
+  width: 100vw;
+  height: 50vh;
+  /* Your section styles here */
+}
+
+section.first {
+  grid-column: 2;
+  grid-row: 1/2;
+  background-color: #efd592;
+  position: relative;
+}
+
+section.second {
+  grid-column: 2;
+  grid-row: 2/3;
+  background-color: #4343f9;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.circle-btn {
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 50%;
+  background-color: #242d38;
+  font-size: 24px;
+  color: #efd592;
+  letter-spacing: 0.2em;
+  font-weight: light;
+
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  
+}
+
+.brick-btn {
+  width: 200px;
+  height: 60px;
+  font-size: 21px;
+
+}
+
+.brick-btn.one {
+  background-color: transparent;
+  border-color: #242d38;
+  border-width: 6px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #242d38;
+
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.brick-btn.two {
+  background-color: #4343f9;
+  box-shadow: 0 0 20px rgb(103, 103, 103);
+  border: none;
+  color: #ffffff;
+  font-weight: regular;
+
+  position: absolute;
+  left: calc(50% - 100px);
+  bottom: 40px;
+}
